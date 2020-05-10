@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if (( "$#" == 0 )); then
+    /mnt/c/Windows/System32/clip.exe
+elif (( "$#" == 1 )); then
+    FILE=$1
+    cat $FILE | /mnt/c/Windows/System32/clip.exe
+fi
